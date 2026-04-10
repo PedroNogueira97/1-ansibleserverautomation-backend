@@ -19,9 +19,9 @@
 - [ ] Garantir que o container tenha acesso à rede/porta SSH da VPS
 
 
-- [ ] Garantir/definir `ansible.cfg` (inventory, remote_user, host_key_checking, etc.)
-- [ ] Garantir/definir `inventory/hosts.ini` com um grupo para suas VPS (ex.: `[vps]`)
-- [ ] Garantir/definir `inventory/group_vars/all.yml` com defaults (pelo menos placeholders de variáveis)
+- [x] Garantir/definir `ansible.cfg` (inventory, remote_user, host_key_checking, etc.)
+- [x] Garantir/definir `inventory/hosts.ini` com um grupo para suas VPS (ex.: `[vps]`)
+- [x] Garantir/definir `inventory/group_vars/all.yml` com defaults (pelo menos placeholders de variáveis)
 
 ### Definition of Done (base)
 
@@ -43,7 +43,7 @@
 
 ### Playbook e roles
 
-- [ ] Criar/validar playbook `playbooks/setup_vps.yml`
+- [x] Criar/validar playbook `playbooks/setup_vps.yml`
   - [ ] Orquestrar roles: `base`, `app_user`, `nginx_site`
 
 - [ ] Criar/validar role `base`
