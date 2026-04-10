@@ -1,0 +1,16 @@
+- name: Setup VPS para um APP (multi-app)
+  hosts: vps
+  become: false
+  gather_facts: true
+  tasks:
+    - name: Orquestrar roles (base -> app_user -> nginx_site)
+      ansible.builtin.import_role:
+        name: base
+
+    - name: Orquestrar app_user
+      ansible.builtin.import_role:
+        name: app_user
+
+    - name: Orquestrar nginx_site
+      ansible.builtin.import_role:
+        name: nginx_site

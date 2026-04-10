@@ -1,0 +1,3 @@
+- name: [placeholder] app_user role
+  ansible.builtin.debug:
+    msg: "app_user role placeholder"

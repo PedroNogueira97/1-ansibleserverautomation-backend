@@ -1,0 +1,3 @@
+- name: [placeholder] ssl role
+  ansible.builtin.debug:
+    msg: "ssl role placeholder"

@@ -1,0 +1,8 @@
+# Defaults (sobrescreva via -e ao executar)
+
+app_name: meuapp
+app_dir: /var/www/meuapp
+app_user: deploy_meuapp
+
+vps_domain: meusite.com.br
+certbot_email: admin@meusite.com.br

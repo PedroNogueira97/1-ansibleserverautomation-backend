@@ -1,0 +1,3 @@
+- name: [placeholder] nginx_site role
+  ansible.builtin.debug:
+    msg: "nginx_site role placeholder"

@@ -1,0 +1,8 @@
+- name: Setup SSL via Certbot (multi-app/domínio)
+  hosts: vps
+  become: false
+  gather_facts: true
+  tasks:
+    - name: Orquestrar role SSL
+      ansible.builtin.import_role:
+        name: ssl
