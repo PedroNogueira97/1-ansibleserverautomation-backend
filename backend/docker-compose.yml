@@ -1,0 +1,14 @@
+services:
+  ansible-runner:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ansible-runner
+    volumes:
+      # Monta o workspace do projeto dentro do container
+      - ../:/workspace
+      # Monta chaves SSH do host para acesso às VPS
+      - ${HOME}/.ssh:/home/runner/.ssh:ro
+    working_dir: /workspace/1-ansibleserverautomation-backend-dev.local
+    tty: true
+    stdin_open: true
